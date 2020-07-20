@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/IlliaSmolin/problems-practice/issues"
   },
-  "homepage": "https://github.com/IlliaSmolin/problems-practice#readme"
+  "homepage": "https://github.com/IlliaSmolin/problems-practice#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "prettier": "^2.0.5"
+  }
 }
