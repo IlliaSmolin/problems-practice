@@ -1,0 +1,19 @@
+{
+  "name": "problems-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlliaSmolin/problems-practice.git"
+  },
+  "author": "Illia Smolin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlliaSmolin/problems-practice/issues"
+  },
+  "homepage": "https://github.com/IlliaSmolin/problems-practice#readme"
+}
