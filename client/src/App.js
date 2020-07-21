@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import { NavLink, Switch, Route } from 'react-router-dom';
 
@@ -35,13 +35,27 @@ const Home = () => (
   </div>
 );
 
-const Users = () => (
-  <div className='users'>
-    <h1>Users</h1>
-    <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
-    <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
-  </div>
-);
+class Users extends Component {
+  state = { users: [] };
+
+  componentDidMount() {
+    fetch("/users")
+      .then(res => res.json())
+      .then(users => this.setState({ users }));
+  }
+
+  render() {
+    return (
+      <div className="users">
+        <h1>Users</h1>
+        <ul>
+          {this.state.users.map(user => 
+            <li key = {user.id}>{user.username}</li>)}
+        </ul>
+      </div>
+    );
+  }
+};
 
 const Something = () => (
   <div className='something'>
