@@ -11,7 +11,12 @@ const NavigationBar = () => (
       </li>
       <li>
         <NavLink exact activeClassName="current" to="/users">
-          Users
+          Users (ping back-end)
+        </NavLink>
+      </li>
+      <li>
+        <NavLink exact activeClassName="current" to="/bruteforce">
+          BruteForce
         </NavLink>
       </li>
     </ul>
