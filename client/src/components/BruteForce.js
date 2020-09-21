@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class BruteForce extends Component {
   state = { users: [] };
 
-  sendPOST() {
+  sendPOST = () => {
     const request = {
       method: 'POST',
       headers: {'Content-Type': 'Application/json'},
@@ -12,7 +12,7 @@ class BruteForce extends Component {
     
     fetch("/bruteforce", request)
       .then((res) => res.json())
-      .then((users) => this.setState({ users })); //error is thrown here for some reason
+      .then((users) => this.setState({ users }));
   }
   
   render() {
