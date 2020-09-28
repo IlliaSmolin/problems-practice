@@ -49,3 +49,16 @@ ul {
   padding-left: 20px;
   font-size: 18px;
 }
+
+input {
+  height: 30px;
+  width: 310px;
+  font-size: large;
+  padding: 5px;
+}
+
+button {
+  height: 30px;
+  font-size: large;
+  margin: 10px;
+}
