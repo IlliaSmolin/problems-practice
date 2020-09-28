@@ -3,11 +3,10 @@ var router = express.Router();
 
 // GET result of the algorithm
 router.post("/", function(req, res) {
-  res.json([
-    { id: 1, username: "somebody" },
-    { id: 2, username: "somebody_else" },
-    { id: 3, username: "illia" },
-  ]);
+  const { body: { password } } = req;
+
+  //temporary response with the received password
+  res.json(password);
 });
 
 module.exports = router;

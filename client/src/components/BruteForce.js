@@ -19,7 +19,7 @@ class BruteForce extends Component {
     const request = {
       method: 'POST',
       headers: {'Content-Type': 'Application/json'},
-      body: JSON.stringify({a: this.state.value})
+      body: JSON.stringify({password: this.state.value})
     };
     
     fetch("/bruteforce", request)
