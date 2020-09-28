@@ -8,7 +8,7 @@ import Main from "./components/Main";
 //main App component body
 const App = () => (
   <div className="app">
-    <h1>Welcome to "Problems Practice" website by Illia Smolin</h1>
+    <h1 id="mainHeader">Welcome to "Problems Practice" website by Illia Smolin</h1>
     <NavigationBar />
     <Main />
   </div>

@@ -21,6 +21,7 @@ nav ul {
   display: flex;
   background-color: black;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 nav ul li {
@@ -38,6 +39,10 @@ nav ul li a {
 
 h1 {
   margin-bottom: 20px;
+}
+
+#mainHeader {
+  text-align: center;
 }
 
 p {
